@@ -61,20 +61,48 @@ mobileMenuBtn.addEventListener("click", function(){
     mobileMenuContent.classList.toggle("show");
 });
 
-function checkemail(){
-    form.forEach(frm => {
-        frm.addEventListener("submit", function(){
-            emailInput.forEach(input => {
-                console.log("submit clicked");
-                if(input.value.length > '0'){
-                    return;
-                } else {
-                    alert("The field input can't be empty");
-                    input.classList.toggle("error");
-                } 
-            });
-        });
-    });
-}
+emailInput.forEach(input => {
+    input.addEventListener("keypress", function(e){
+        if(e.key === "Enter"){
+            console.log("submit clicked");
+            if(input.value.length > '0'){
+                return;
+            } else {
+                alert("The field input can't be empty");
+                input.classList.toggle("error");
+            }
+        }
+    })
+});
 
-checkemail();
+// submitBtn.forEach(btn => {
+//     btn.addEventListener("click", function(){
+//         console.log("submit clicked");
+//         emailInput.forEach(input => {
+//             if(input.value.length > 0){
+//                 return;
+//             } else {
+//                 alert("The field input can't be empty");
+//                 input.classList.toggle("error");
+//             }
+//         })
+//     });
+// });
+
+// form.forEach(frm => {
+//     frm.addEventListener("submit", function(){
+//         emailInput.forEach(input => {
+//             // input.addEventListener("keypress", function(e){
+//             //     if(e.key === "Enter"){
+//                     console.log("submit clicked");
+//                     if(input.value.length > 0){
+                        
+//                     } else {
+//                         alert("The field input can't be empty");
+//                         input.classList.toggle("error");
+//                     }
+//             //     }
+//             // })
+//         });
+//     })
+// })

@@ -227,7 +227,7 @@ form button:hover{
     background-color: hsl(12, 88%, 73%);
     border-color: hsl(12, 88%, 73%);
 }
-input{
+input[type='email']{
     margin-bottom: 3rem;
     padding: .75rem 1.5rem;
     border: 2px solid white;
@@ -346,7 +346,7 @@ input{
     .social-links{
         margin: 0 auto 3rem auto;
     }
-    input{
+    input[type='email']{
         margin-bottom: 0;
     }
 
