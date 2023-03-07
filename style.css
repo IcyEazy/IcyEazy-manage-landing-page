@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.mobile{
+    display: none;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.imgs{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+svg path{
+    transition: all 0.4s;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s;
+}
+button, .mobile-menu-btns{
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.desk-links a, .mobile-menu a{
+    color: hsl(228, 39%, 23%);
+    font-weight: 600;
+}
+.desk-links a:hover{
+    color: hsl(227, 12%, 61%);
+}
+p{
+    color: hsl(227, 12%, 61%);
+    line-height: 30px;
+}
+h1,h2,h3,h4{
+    color: hsl(228, 39%, 23%);
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+.get-btn button{
+    color: white;
+    padding: 1rem 2rem;
+    background-color: hsl(12, 88%, 59%);
+    border: 1px solid hsl(12, 88%, 59%);
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 5px 8px 0px rgba(247,6,6,0.35);
+    -moz-box-shadow: 0px 5px 8px 0px rgba(247,6,6,0.35);
+    box-shadow: 0px 5px 8px 0px rgba(247,6,6,0.35);
+    font-weight: 600;
+}
+.get-btn button:hover{
+    background-color: hsl(12, 88%, 73%);
+    border-color: hsl(12, 88%, 73%);
+}
+.simplify button{
+    background-color: white;
+    color: hsl(12, 88%, 59%);
+}
+.simplify button:hover{
+    background-color: white;
+    color: hsl(12, 88%, 73%);
+}
+
+header{
+    padding: 3rem 6rem;
+    background-image: url("./images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.desk-links{
+    display: flex;
+    align-items: center;
+}
+.d-link{
+    margin: auto 2rem;
+}
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem auto;
+}
+.desk-intro{
+    width: 40%;
+}
+.intro-get-btn{
+    margin: 2rem auto 4rem auto;
+}
+
+.manage{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+}
+.manage-categories, .manage-texts{
+    width: 45%;
+}
+.sn{
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    font-weight: 500;
+    padding: .6rem 1.5rem;
+    border-radius: 20px;
+    margin-right: 1.35rem;
+}
+.category{
+    margin: 2rem auto 3rem auto;
+}
+.category-texts{
+    margin: 1rem 0 1rem 6rem;
+}
+.category-title{
+    font-weight: 600;
+    color: hsl(228, 39%, 23%);
+}
+
+.desktop.profile-said{
+    text-align: center;
+    margin: 2.5rem 0 7rem 0;
+}
+.desktop .profiles{
+    /* display: flex;
+    justify-content: space-between; */
+    overflow: auto;
+    white-space: nowrap;
+}
+.desktop .profiles::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.desktop .profiles {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.desktop .profile{
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+}
+.avatar{
+    width: 70px;
+    margin-top: 2rem;
+}
+
+.simplify{
+    background-color: hsl(12, 88%, 59%);
+    background-image: url("./images/bg-simplify-section-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 6rem;
+}
+.simplify h2{
+    width: 45%;
+    color: white;
+}
+
+footer{
+    background-color: hsl(233, 12%, 13%);
+    padding: 4rem 6rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-links ul{
+    margin: 0 6rem;
+}
+.foot-links{
+    line-height: 40px;
+}
+.foot-links a:hover{
+    color: hsl(12, 88%, 59%);
+}
+.desk-form{
+    text-align: right;
+}
+.social-links{
+    word-spacing: 1rem;
+    margin-top: 4rem;
+}
+.social-links svg:hover path{
+    fill: hsl(12, 88%, 59%);
+}
+form button{
+    padding: .75rem 1.75rem;
+    border: 2px solid hsl(12, 88%, 59%);
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: white;
+    background-color: hsl(12, 88%, 59%);
+    font-weight: 600;
+    margin-left: .5rem;
+}
+form button:hover{
+    background-color: hsl(12, 88%, 73%);
+    border-color: hsl(12, 88%, 73%);
+}
+input{
+    margin-bottom: 3rem;
+    padding: .75rem 1.5rem;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 800px){
+    header, .manage{
+        padding: 2rem;
+    }
+    .d-link{
+        margin: auto 1rem;
+    }
+    .simplify, footer{
+        padding: 4rem 2rem;
+    }
+    .footer-links ul{
+        margin: auto 2rem;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 35px;
+    }
+
+    header{
+        padding: 2rem 1.5rem;
+    }
+    .intro{
+        flex-direction: column;
+        text-align: center;
+        margin: 2rem auto;
+    }
+    .intro-get-btn{
+        margin: 1.5rem auto 3rem auto;
+    }
+    .intro-img{
+        margin-top: 1rem;
+    }
+
+    .manage{
+        flex-direction: column;
+        padding: 2rem 0 0 0;
+    }
+    .manage-texts{
+        text-align: center;
+        width: auto;
+    }
+    .manage-categories{
+        width: auto;
+        margin: 1.5rem auto;
+    }
+    .category-head{
+        margin-left: 1rem;
+        background-color: hsl(13, 100%, 96%);
+        padding: .6rem 0;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    .category-texts{
+        margin: .75rem 1rem;
+    }
+    .sn{
+        margin-right: .5rem;
+        padding: .6rem 1.25rem;
+    }
+
+    .avatar{
+        width: 90px;
+    }
+
+    .mobile.profile-said{
+        text-align: center;
+        margin: 0 auto 3rem auto;
+        padding: 0 1.25rem;
+    }
+    .profile-options{
+        margin: 4rem auto 3rem auto;
+    }
+
+    .simplify{
+        background-image: url("./images/bg-simplify-section-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 4rem 1.5rem;
+    }
+    .simplify h2{
+        width: auto;
+    }
+
+    footer{
+        padding: 3rem 1.4rem;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-links ul{
+        margin: 3rem 2rem;
+    }
+    .social-logo{
+        text-align: center;
+    }
+    .social-links{
+        margin: 0 auto 3rem auto;
+    }
+    input{
+        margin-bottom: 0;
+    }
+
+    .menu{
+        background-color: white;
+        border-radius: 8px;
+        width: 100%;
+        padding: 2rem 0;
+        /* -webkit-box-shadow: 0px 5px 8px 0px rgba(232,226,226,0.5);
+        -moz-box-shadow: 0px 5px 8px 0px rgba(232,226,226,0.5);
+        box-shadow: 0px 5px 8px 0px rgba(232,226,226,0.5); */
+        -webkit-box-shadow: 0px 0px 8px 2px rgba(232,226,226,0.5);
+        -moz-box-shadow: 0px 0px 8px 2px rgba(232,226,226,0.5);
+        box-shadow: 0px 0px 8px 2px rgba(232,226,226,0.5);
+    }
+    .mobile-menu ul{
+        line-height: 45px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: white;
+}
