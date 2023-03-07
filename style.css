@@ -15,6 +15,9 @@ body{
 .show{
     display: block;
 }
+.error{
+    outline-color: red;
+}
 .imgs{
     width: 100%;
 }

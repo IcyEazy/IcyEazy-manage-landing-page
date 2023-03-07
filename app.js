@@ -6,7 +6,10 @@ let mobileMenuBtn = document.querySelector(".mobile-menu-btns"),
     profileAvatar = document.querySelector(".avatar"),
     profileName = document.querySelector(".name"),
     profileComments = document.querySelector(".said-texts"),
-    profileOptions = document.querySelectorAll('input[type="radio"]');
+    profileOptions = document.querySelectorAll('input[type="radio"]'),
+    submitBtn = document.querySelectorAll(".submit"),
+    form = document.querySelectorAll("form"),
+    emailInput = document.querySelectorAll('input[type="email"]');
 
 
 
@@ -58,3 +61,20 @@ mobileMenuBtn.addEventListener("click", function(){
     mobileMenuContent.classList.toggle("show");
 });
 
+function checkemail(){
+    form.forEach(frm => {
+        frm.addEventListener("submit", function(){
+            emailInput.forEach(input => {
+                console.log("submit clicked");
+                if(input.value.length > '0'){
+                    return;
+                } else {
+                    alert("The field input can't be empty");
+                    input.classList.toggle("error");
+                } 
+            });
+        });
+    });
+}
+
+checkemail();
